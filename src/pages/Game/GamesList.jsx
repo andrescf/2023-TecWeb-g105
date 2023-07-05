@@ -46,7 +46,6 @@ const GameList = ( ) => {
       />
 
       {errorMessage && <p className="error-message">{errorMessage}</p>}
-      <button onClick={handleNewGame}>Crear nueva partida</button>
       <ul className="game-list">
         {notInitiatedGames.map(game => {
           return (
