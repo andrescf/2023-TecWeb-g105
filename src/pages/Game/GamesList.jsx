@@ -46,7 +46,7 @@ const GameList = ( ) => {
       />
 
       {errorMessage && <p className="error-message">{errorMessage}</p>}
-
+      <button onClick={handleNewGame}>Crear nueva partida</button>
       <ul className="game-list">
         {notInitiatedGames.map(game => {
           return (
@@ -125,6 +125,28 @@ const createPlayer = (gameId, userId, playerName) => {
     })
     .catch(error => console.log(error));
   
+};
+
+const handleNewGame = () => {
+  // Create new game in the backend
+  const data = {
+    "state": "notinitiated",
+    "winner": "None",
+    "turn": 1
+  }
+  fetch('http://localhost:3000/games', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(data)
+  })
+  .then(response => response.json())
+  .then(data => {
+    // Handle the response from the backend if needed
+    console.log(data);
+  })
+  .catch(error => console.log(error));
 };
 
 export default GameList;
