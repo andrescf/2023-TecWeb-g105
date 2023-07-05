@@ -1,0 +1,13 @@
+.landing-text {
+    background: transparent;
+}
+
+@media screen and (max-width: 850px) {
+    .bg-container {
+        height: 100.5vh;
+    }
+
+    .content {
+        font-size: 13px;
+    }
+}

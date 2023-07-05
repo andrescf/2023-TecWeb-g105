@@ -1,0 +1,31 @@
+.gameList{
+    align-items: center;
+}
+
+.game-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 50%;
+    height: auto;
+  }
+  
+  .game-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+  }
+  
+  .game-item h3 {
+    color: #888;
+  }
+  
+  .game-item p {
+    color: #888;
+  }
+  
+  .game-item button {
+    color: aqua;
+  }

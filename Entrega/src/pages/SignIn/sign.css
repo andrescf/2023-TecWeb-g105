@@ -1,0 +1,85 @@
+.signin-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5vw;
+  text-align: justify;
+  gap: 30px;
+}
+
+.createuserform {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.signin-form {
+  background-color: #6D597A;
+  width: 400px;
+  border-radius: 8px;
+  padding: 20px 40px;
+  box-shadow: 0 10px 25px rgba(92, 99, 105, .2);
+}
+
+.signin-title {
+  font-size: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+  color: #355070;
+  /* make the text have a black border */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  font-weight: bold;
+}
+
+.inputContainer {
+  position: relative;
+  height: 45px;
+  width: 100%;
+  margin-bottom: 17px;
+}
+
+.signin-input {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  border: 1px solid #EAAC8B;
+  border-radius: 7px;
+  font-size: 16px;
+  padding: 0 20px;
+  outline: none;
+  background: none;
+  z-index: 1;
+}
+
+/* Hide the placeholder texts (a) */
+
+::placeholder {
+  color: transparent;
+}
+
+.signin-label {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  padding: 0 4px;
+  background-color: #6D597A;
+  color: #EAAC8B;
+  font-size: 16px;
+  transition: 0.5s;
+  z-index: 0;
+}
+
+@media screen and (max-width: 850px) {
+  .bg-container {
+      height: 100.5vh;
+  }
+
+.content {
+      font-size: 13px;
+  }
+}

@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital@1&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito', sans-serif;
+  font-size: 20px;
+}
+
+body {
+  background-color: #EAAC8B;
+}
+
+/* UTILITY */
+
+.name {
+  color: #ac454f
+}
+
+body {
+  font-family: Poppins;
+}
+
+/* NAVBAR */
+
+.header {
+  background-color: #355070;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 85px;
+  padding: 30px;
+}
+
+.header .logo_usuario {
+  cursor: pointer;
+}
+
+.header .logo_usuario img{
+  height: 2rem;
+  width: 2rem;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+}
+
+.header .logo_usuario img:hover{
+  transform: scale(1.2)
+}
+
+.header .nav-links li{
+  display: inline-block;
+  padding: 0 30px;
+}
+
+.header .nav-links li:hover{
+  transform: scale(1.1);
+  transition: transform 0.2s ease;
+}
+
+.header .nav-links .navbar-link{
+  font-size:  700;
+  color: #EAAC8B;
+  text-decoration: none;
+}
+
+.header .nav-links .navbar-link:hover{
+  color:#B56576;
+}
+
+.header .nav-links .navbar-button{
+  font-weight: 700;
+  color: #E56B6F;
+  padding: 9px 25px;
+  background: #6D597A;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.header .nav-links .navbar-button:hover{
+  transform: scale(1.1);
+}
+
+/* FOOTER */
+.footer {
+  background-color: #355070;
+  color: #EAAC8B ;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  padding: 30px;
+  text-align: center;
+}
+
+@media screen and (max-width: 850px) {
+
+  .title {
+      font-size: 15px;
+  }
+  .logo-image {
+      width: 27px;
+  }
+
+  .navbar-link {
+      font-size: 9px;
+  }
+
+}

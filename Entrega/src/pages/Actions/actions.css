@@ -1,0 +1,141 @@
+/* .card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 300px;
+    border: 1px solid #ccc;
+    transition: transform 0.3s, width 0.3s, height 0.3s;
+    cursor: pointer;
+  }
+  
+  .card:hover {
+    transform: scale(1.1);
+    width: 220px;
+    height: 320px;
+  }
+  
+  .card.open {
+    width: 600px;
+    height: 320px;
+  }
+  
+  .card.open .info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .card.open .info h2 {
+    margin: 0;
+  }
+  
+  .card.open img {
+    width: 200px;
+    height: auto;
+  }
+*/
+
+.action-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem 0 0 0;
+    /* font-size: 1.5vw; */
+    /* give more space betwen the columns */
+    row-gap: 2rem;
+}
+
+.action-card {
+    position: relative;
+    max-width : 300px;
+    height : 215px;  
+    background-color : #6D597A;
+    margin : 30px 10px;
+    padding : 20px 15px;
+    
+    display : flex;
+    flex-direction : column;
+    box-shadow : 0 5px 20px rgba(0,0,0,0.5);
+    transition : 0.3s ease-in-out;
+    border-radius : 15px;
+    overflow : visible;    
+  }
+
+  .action-card:hover {
+    height : 320px;
+    background-color: #355070;
+  }
+  
+  .action-card .image {
+    position : relative;
+    width : 260px;
+    height : 260px;
+
+    top : -40%;
+    left: 8px;
+    z-index : 1;
+    object-fit: scale-down;
+    background: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition : 0.3s ease-in-out;
+  }
+  
+  .action-card .image img {
+    max-width : 100%;
+    border-radius : 15px;
+    object-fit: scale-down;
+    background: transparent;
+  }
+
+  
+  .action-card .content {
+    display: flex;
+    flex-direction : column;
+    position : relative;
+    top : -140px;
+    padding : 10px 15px;
+    color : #EAAC8B;
+    text-align : center; 
+    visibility : hidden;
+    opacity : 0;
+    transition : 0.3s ease-in-out;
+      
+  }
+
+  
+  .action-card .content p {
+      font-size : small;
+      margin-bottom : 1rem;
+    }
+    
+    .action-card:hover .content {
+        margin-top : 30px;
+        visibility : visible;
+        opacity : 1;
+        transition-delay: 0.2s;
+        
+    }
+    
+    .action-card .content h3 {
+        font-size : 1rem;
+        margin-bottom : 0.5rem;
+        color : #E56B6F;
+        visibility: visible;
+    }
+
+@media screen and (max-width: 850px) {
+
+    .bg-container {
+        height: 100.5vh;
+    }
+
+    .content {
+        font-size: 13px;
+    }
+}
